@@ -1,1 +1,1 @@
-## Follow https://github.com/mking/react-hn with TypeScript
+Follow https://github.com/mking/react-hn with TypeScript
