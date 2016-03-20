@@ -11,6 +11,14 @@ class Link {
 
 class NewsHeader extends React.Component<any, {}> {
 
+    getLogin() {
+        return(
+            <div className="newsHeader-login">
+                <a className="newsHeader-textLink" href="https://news.ycombinator.com/login?wherece=news">login</a>
+            </div>
+        );
+    }
+
     getNav() {
         var navLinks = [
             new Link("new", "newnest"),
@@ -56,6 +64,7 @@ class NewsHeader extends React.Component<any, {}> {
                 {this.getLogo()}
                 {this.getTitle()}
                 {this.getNav()}
+                {this.getLogin()}
             </div>
         );
     }

@@ -15,9 +15,12 @@
     "wwwroot"
   ],
   "files": [
+    "hn/js/app.tsx",
     "hn/js/NewsHeader.tsx",
     "hn/js/NewsItem.tsx",
-    "hn/js/NewsItemTest.tsx"
+    "hn/js/NewsItemTest.tsx",
+    "hn/js/NewsList.tsx",
+    "hn/js/NewsListTest.tsx"
   ],
   "filesGlob": [
     "hn/js/**/*.tsx"

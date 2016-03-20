@@ -67,7 +67,9 @@ var NewsItem = (function (_super) {
         ));
     };
     NewsItem.prototype.getDomin = function () {
-        return "http://www.google.com";
+        var tmp = document.createElement('a');
+        tmp.href = this.props.item.url;
+        return tmp.host;
     };
     NewsItem.prototype.render = function () {
         return (React.createElement("div", {className: "newsItem"}, 

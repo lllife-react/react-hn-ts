@@ -15,6 +15,11 @@ var NewsHeader = (function (_super) {
     function NewsHeader() {
         _super.apply(this, arguments);
     }
+    NewsHeader.prototype.getLogin = function () {
+        return (React.createElement("div", {className: "newsHeader-login"}, 
+            React.createElement("a", {className: "newsHeader-textLink", href: "https://news.ycombinator.com/login?wherece=news"}, "login")
+        ));
+    };
     NewsHeader.prototype.getNav = function () {
         var navLinks = [
             new Link("new", "newnest"),
@@ -44,7 +49,8 @@ var NewsHeader = (function (_super) {
         return (React.createElement("div", {className: "newsHeader"}, 
             this.getLogo(), 
             this.getTitle(), 
-            this.getNav()));
+            this.getNav(), 
+            this.getLogin()));
     };
     return NewsHeader;
 }(React.Component));

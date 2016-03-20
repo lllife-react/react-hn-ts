@@ -75,7 +75,9 @@ class NewsItem extends React.Component<NewItemsProps, {}> {
     }
 
     getDomin() {
-        return "http://www.google.com";
+        var tmp = document.createElement ('a');
+        tmp.href = this.props.item.url; 
+        return tmp.host;
     }
 
     render() {
