@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": "hn/build/js",
+    "module": "commonjs",
+    "jsx": "react"
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "files": [
+    "hn/js/NewsHeader.tsx",
+    "hn/js/NewsItem.tsx",
+    "hn/js/NewsItemTest.tsx"
+  ],
+  "filesGlob": [
+    "hn/js/**/*.tsx"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
